@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosco Business</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            background-color: navy;
+            color: white;
+            padding: 10px;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: skyblue;
+            font-weight: bold; 
+            text-shadow: 3px 3px 3px black;
+        }
+        body {
+            font-family: "Oswald", sans-serif;
+            background-color: rgb(157, 188, 255)
+        }
+        header{
+            background-image: url(images/business.jpg);
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+        #titular {
+            text-align: center;
+        }
+        #titular h1 {
+            color: white;
+            text-shadow: 3px 3px 5px black;
+            font-size: 3em;
+        }
+        #titular h2 {
+            color: white;
+            text-shadow: 3px 3px 5px black;
+        }
+        #contenedor-quienes-somos {
+            border: 2px solid skyblue;
+            border-radius: 3%;
+            display: flex;
+            background-color: cornflowerblue;   
+        }
+        #izqu {
+            color: white;
+        }
+        #izqu h1 {
+            font-size: 2.5em;
+        }
+        #izqu p {
+            font-size: 20px;
+        }
+        #dere img {
+            border-radius: 15%;
+            height: 450px;
+            padding: 20px;
+        }
+        .titulo {
+            text-align: center;
+            color: skyblue;
+            text-shadow: 3px 3px 3px blue;
+        }
+        
+        #contenedor-obras {
+            border: 2px solid skyblue;
+            border-radius: 3%;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: cornflowerblue;
+            justify-content: space-around;
+            font-size: 2em;
+        }
+        .obra {
+            width: 30%;
+            border-radius: 15%;
+            text-align: center;
+        }
+        #obras img {
+            height: 300px;
+            border-radius: 15%;
+        }
+        #obras p {
+            color: white;
+        }
+        footer {
+            background-color: lightblue;
+            padding: 20px;
+            color: white;
+            text-shadow: 1px 2px 0px black;
+        }
+        footer a {
+            text-decoration: none;
+            text-shadow: none;
+        }
+        #contenedor-footer {
+            display: flex;
+            justify-content: space-around;
+        }
+        #titulo-footer {
+            text-align: center;
+            border-bottom: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="">Quienes somos</a>
+        <a href="">Dónde estamos</a>
+        <a href="">Contacto</a>
+        <a href="">Qué hacemos</a>
+    </nav>
+    <header>
+        <div id="titular">
+            <h1>Bosco Business</h1>
+            <h2>Tu puerta al futuro</h2>
+        </div>
+    </header>
+    <section id="quienes-somos">
+        <h1 class="titulo">Quienes somos</h1>
+        <div id="contenedor-quienes-somos">
+            <div id="izqu">
+            <h1>Un equipo multidisciplinar y profesional</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptatum harum commodi ab amet minima hic fugiat? Vel laboriosam aspernatur distinctio facilis qui tempore delectus voluptatem, sequi asperiores ipsam necessitatibus.
+            </p>
+            </div>
+            <div id="dere">
+            <img src="images/empresa.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+    <section id="obras">
+        <h1 class="titulo">Obras</h1>
+        <div id="contenedor-obras">
+            <div class="obras">
+                <img src="images/casa.jpg" alt="">
+                <p>Sevilla</p>
+            </div>
+            <div class="obras">
+                <img src="images/casa.jpg" alt="">
+                <p>Sevilla</p>
+            </div>
+            <div class="obras">
+                <img src="images/casa.jpg" alt="">
+                <p>Sevilla</p>
+            </div>
+             <div class="obras">
+                <img src="images/casa.jpg" alt="">
+                <p>Sevilla</p>
+            </div>
+             <div class="obras">
+                <img src="images/casa.jpg" alt="">
+                <p>Sevilla</p>
+            </div>
+        </div> 
+    </section>
+    <section>
+        <footer>
+            <div id="titulo-footer">
+                Contacte con nosotros, trabajamos los 365 días del año
+            </div>
+            <div id="contenedor-footer">
+                <div>
+                    <h2>Enlaces</h2>
+                    <a href="">Facebook</a>
+                    <a href="">Twitter</a>
+                    <a href="">Instagram</a>
+                </div>
+                <div>
+                    <h2>Estamos en</h2>
+                    <p>Avda. Los Institutos s/n</p>
+                    <p>13600 Alcázar de San Juan</p>
+                </div>
+                <div>
+                    <h2>Email</h2>
+                    <p>estioalto@gmail.com</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
