@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body {
+            background-color: aquamarine;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background-image: url(images/Taller-detalle.png);
+            background-size: cover;
+            background-position: center center ;
+        }
+        header h1 {
+            color: white;
+            text-shadow: 3px 3px 0px black;
+        }
+        nav {
+            background-color: blue;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            border-bottom: 2px solid white;
+            padding: 10px;
+            font-size: 2em;
+        }
+        
+        nav a:hover {
+            background-color: aqua;
+            color: brown;
+            font-weight: bold;
+        }
+        #contenedor-quienes-somos {
+            display: flex;  
+            justify-content: space-around;
+        }
+        #contenedor-quienes-somos p{
+            width: 45%;
+        }
+        #contenedor-quienes-somos img {
+            width: 45%;
+        }
+        
+        
+        @media (min-width:768px) {
+            body {
+                background-color: lightpink;
+                background-size: cover;
+            }
+             header {
+                background-image: url(images/Taller.jpeg);
+                
+            }
+            nav {
+                
+                justify-content: space-around;
+            }
+            nav a {
+                display: inline;
+            }
+        }
+        @media (min-width:1000px) {
+            body {
+                background-color: yellow;
+                background-size: cover;
+            }  
+            header {
+                background-image: url(images/Taller.jpeg);
+            } 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Talleres Bosco</h1>
+    </header>
+    <nav>
+        <a href="#quienes">Quienes somos</a>
+        <a href="#donde-estamos">Dónde estamos</a>
+        <a href="#nuestros-clientes">Nuestros clientes</a>
+    </nav>
+    <section id="quienes-somos">
+        <h1 class="titulo">
+            Quienes somos
+        </h1>
+        <div id="contenedor-quienes-somos">
+            <img src="images/Grupo personas.jpg" alt="">
+            <p>Somos una empresa jóven y dinámica Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem repellat tenetur placeat dignissimos cumque eum, odit atque ducimus facere quam, iure dolorum quisquam doloremque veniam architecto obcaecati esse, commodi sed.</p>
+        </div>
+    </section>
+    <h1>Media Queries</h1>
+</body>
+</html>
