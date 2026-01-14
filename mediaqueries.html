@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/09ad6cf311.js" crossorigin="anonymous"></script>
     <style>
         *{
             box-sizing: border-box;
@@ -55,6 +56,34 @@
             width: 45%;
         }
         
+        #nuestros-servicios {
+            background-color: white;
+        }
+        .servicio {
+            color: blue;
+            text-align: center;
+            border: 2px solid blue;
+            border-radius: 10px;
+            font-size: 4em;
+            margin-bottom: 10px;
+            width: 45%;
+            font-size: 2em;
+            
+        }
+        .servicio:hover {
+            opacity: 0.5;
+        }
+        .titulo {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            padding: 10px;
+        }
+        #contenedor-nuestros-servicios {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
         
         @media (min-width:768px) {
             body {
@@ -81,6 +110,7 @@
             header {
                 background-image: url(images/Taller.jpeg);
             } 
+            
         }
     </style>
 </head>
@@ -100,6 +130,33 @@
         <div id="contenedor-quienes-somos">
             <img src="images/Grupo personas.jpg" alt="">
             <p>Somos una empresa jóven y dinámica Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem repellat tenetur placeat dignissimos cumque eum, odit atque ducimus facere quam, iure dolorum quisquam doloremque veniam architecto obcaecati esse, commodi sed.</p>
+        </div>
+    </section>
+    <section id="nuestros-servicios">
+        <h1 class="titulo">
+            Nuestros servicios
+        </h1>
+        <div id="contenedor-nuestros-servicios">
+        <div class="servicio">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <p>Servicio técnico</p>
+        </div>
+        <div class="servicio">
+            <i class="fa-solid fa-phone"></i>
+            <p>Atención telefónica</p>
+        </div>
+        <div class="servicio">
+            <i class="fa-solid fa-truck"></i>
+            <p>Servicio a domicilio</p>
+        </div>
+        <div class="servicio">
+            <i class="fa-solid fa-car"></i>
+            <p>Vehículo de sustitución</p>
+        </div>
+        <div class="servicio">
+            <i class="fa-solid fa-circle-info"></i>
+            <p>Información</p>
+        </div>
         </div>
     </section>
     <h1>Media Queries</h1>
